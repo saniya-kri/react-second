@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 // import logo from "../assets/logo.png";
 import { navItems } from "../constant";
-import { NavLink, Link } from "react-router-dom";
+// import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -23,7 +23,7 @@ const Navbar = () => {
                   key={index}
                   className="hover:underline transition-all duration-300"
                 >
-                  <NavLink to={item.href}>{item.label}</NavLink>
+                  <a hrf={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>
